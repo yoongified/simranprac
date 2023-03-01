@@ -18,4 +18,9 @@ pipeline {
             }
         }
     }
+    post{
+        build{
+            emailext body: 'THIS IS GIT', subject: 'HEY', to: 'shettigar269@gmail.com'
+        }
+    }
 }
